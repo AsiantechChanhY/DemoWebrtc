@@ -10,15 +10,14 @@
 
 package com.example.admin.demowebrtc.util;
 
-import org.appspot.apprtc.RoomParametersFetcher.RoomParametersFetcherEvents;
-import org.appspot.apprtc.WebSocketChannelClient.WebSocketChannelEvents;
-import org.appspot.apprtc.WebSocketChannelClient.WebSocketConnectionState;
-import org.appspot.apprtc.util.AsyncHttpURLConnection;
-import org.appspot.apprtc.util.AsyncHttpURLConnection.AsyncHttpEvents;
-import org.appspot.apprtc.util.LooperExecutor;
-
 import android.util.Log;
 
+import com.example.admin.demowebrtc.AppRTCClient;
+
+import com.example.admin.demowebrtc.util.RoomParametersFetcher.RoomParametersFetcherEvents;
+import com.example.admin.demowebrtc.util.WebSocketChannelClient.WebSocketChannelEvents;
+import com.example.admin.demowebrtc.util.WebSocketChannelClient.WebSocketConnectionState;
+import com.example.admin.demowebrtc.util.AsyncHttpURLConnection.AsyncHttpEvents;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.webrtc.IceCandidate;

@@ -10,8 +10,6 @@
 
 package com.example.admin.demowebrtc.util;
 
-import org.appspot.apprtc.util.AppRTCUtils;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -93,7 +91,7 @@ public class AppRTCAudioManager {
   }
 
   /** Construction */
-  static AppRTCAudioManager create(Context context,
+  public static AppRTCAudioManager create(Context context,
       Runnable deviceStateChangeListener) {
     return new AppRTCAudioManager(context, deviceStateChangeListener);
   }

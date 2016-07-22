@@ -14,8 +14,8 @@ import android.content.Context;
 import android.opengl.EGLContext;
 import android.util.Log;
 
-import org.appspot.apprtc.AppRTCClient.SignalingParameters;
-import org.appspot.apprtc.util.LooperExecutor;
+import com.example.admin.demowebrtc.AppRTCClient.SignalingParameters;
+import com.example.admin.demowebrtc.util.LooperExecutor;
 import org.webrtc.CameraEnumerationAndroid;
 import org.webrtc.DataChannel;
 import org.webrtc.IceCandidate;

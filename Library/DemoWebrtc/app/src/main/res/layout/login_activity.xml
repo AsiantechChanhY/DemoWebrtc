@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/tvwebtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEBRTC"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+        <LinearLayout
+            android:id="@+id/rledtwebrtc"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:layout_below="@+id/tvwebtc"
+            android:layout_marginTop="70dp">
+
+                <EditText
+                    android:id="@+id/edtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/rledtwebrtc"
+        android:layout_marginTop="20dp"
+        android:text="JOIN"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
+</RelativeLayout>

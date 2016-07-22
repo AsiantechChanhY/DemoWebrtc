@@ -88,9 +88,9 @@ public class CallFragment extends Fragment {
 
         Bundle args = getArguments();
         if (args != null) {
-            String contactName = args.getString(CallActivity.EXTRA_ROOMID);
-            contactView.setText(contactName);
-            videoCallEnabled = args.getBoolean(CallActivity.EXTRA_VIDEO_CALL, true);
+            String contactName = args.getString(Constants.EXTRA_ROOMID);
+            contactView.setText(contactName + " call");
+            videoCallEnabled = args.getBoolean(Constants.EXTRA_VIDEO_CALL, true);
         }
         if (!videoCallEnabled) {
             cameraSwitchButton.setVisibility(View.INVISIBLE);

@@ -10,22 +10,19 @@
 
 package com.example.admin.demowebrtc.util;
 
-import org.appspot.apprtc.util.AsyncHttpURLConnection;
-import org.appspot.apprtc.util.AsyncHttpURLConnection.AsyncHttpEvents;
-import org.appspot.apprtc.util.LooperExecutor;
-
 import android.util.Log;
 
-import de.tavendo.autobahn.WebSocket.WebSocketConnectionObserver;
-import de.tavendo.autobahn.WebSocketConnection;
-import de.tavendo.autobahn.WebSocketException;
-
+import com.example.admin.demowebrtc.util.AsyncHttpURLConnection.AsyncHttpEvents;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.LinkedList;
+
+import de.tavendo.autobahn.WebSocket.WebSocketConnectionObserver;
+import de.tavendo.autobahn.WebSocketConnection;
+import de.tavendo.autobahn.WebSocketException;
 
 /**
  * WebSocket client implementation.

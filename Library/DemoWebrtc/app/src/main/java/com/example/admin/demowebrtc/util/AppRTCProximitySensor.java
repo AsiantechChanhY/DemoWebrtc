@@ -10,9 +10,6 @@
 
 package com.example.admin.demowebrtc.util;
 
-import org.appspot.apprtc.util.AppRTCUtils;
-import org.appspot.apprtc.util.AppRTCUtils.NonThreadSafe;
-
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -20,6 +17,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.util.Log;
+
+import com.example.admin.demowebrtc.util.AppRTCUtils.NonThreadSafe;
 
 /**
  * AppRTCProximitySensor manages functions related to the proximity sensor in

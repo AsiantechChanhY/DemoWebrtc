@@ -10,12 +10,10 @@
 
 package com.example.admin.demowebrtc.util;
 
-import org.appspot.apprtc.AppRTCClient.SignalingParameters;
-import org.appspot.apprtc.util.AsyncHttpURLConnection;
-import org.appspot.apprtc.util.AsyncHttpURLConnection.AsyncHttpEvents;
-
 import android.util.Log;
 
+import com.example.admin.demowebrtc.AppRTCClient.SignalingParameters;
+import com.example.admin.demowebrtc.util.AsyncHttpURLConnection.AsyncHttpEvents;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

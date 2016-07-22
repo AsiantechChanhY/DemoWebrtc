@@ -7,13 +7,12 @@
     </solid>
 
     <stroke
-        android:width="0.5dp"
-        android:color="#fff" >
+        android:width="1dp"
+        android:color="@color/colorPrimaryDark" >
     </stroke>
 
     <padding
         android:bottom="5dp"
-        android:right="15dp"
         android:top="5dp" >
     </padding>
 
