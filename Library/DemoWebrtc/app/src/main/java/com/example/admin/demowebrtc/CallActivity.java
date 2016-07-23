@@ -24,6 +24,7 @@ import com.example.admin.demowebrtc.util.UnhandledExceptionHandler;
 import com.example.admin.demowebrtc.util.WebSocketRTCClient;
 
 import org.webrtc.IceCandidate;
+import org.webrtc.PeerConnectionFactory;
 import org.webrtc.RendererCommon.ScalingType;
 import org.webrtc.SessionDescription;
 import org.webrtc.StatsReport;
@@ -159,6 +160,7 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
             finish();
             return;
         }
+
         String roomId = intent.getStringExtra(Constants.EXTRA_ROOMID);
         if (roomId == null || roomId.length() == 0) {
             logAndToast(getString(R.string.missing_url));

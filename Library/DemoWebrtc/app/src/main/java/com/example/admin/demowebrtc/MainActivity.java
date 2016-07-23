@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.telecom.Call;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -70,11 +71,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         mListPhone = (ListView) findViewById(R.id.lvlistphopne);
         mListPhone.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        mPhone = (ImageView) findViewById(R.id.imgphone);
+        mPhone = (ImageView) findViewById(R.id.imgaddphone);
         mPhone.setOnClickListener(connectListener);
 
-        mVideo = (ImageView) findViewById(R.id.imgvideo);
-        mVideo.setOnClickListener(connectListener);
+//        mVideo = (ImageView) findViewById(R.id.imgvideo);
+//        mVideo.setOnClickListener(connectListener);
 
         mMainUserName = (TextView) findViewById(R.id.main_username);
         mMainUserName.setText(username);
@@ -111,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         @Override
         public void onClick(View view) {
             boolean loopback = false;
-            if (view.getId() == R.id.imgvideo) {
+            if (view.getId() == R.id.imgaddphone) {
                 loopback = true;
             }
             commandLineRun = true;
